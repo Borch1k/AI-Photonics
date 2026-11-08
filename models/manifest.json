@@ -1,0 +1,59 @@
+{
+  "architecture": "ffn",
+  "kind": "pinn",
+  "mask_size": [
+    128,
+    128
+  ],
+  "models": {
+    "lens": {
+      "file": "pinn_lens.pt",
+      "sha256": "e5dfc8308ce71092ed4537d028dd9f1ccbb2f09c614f06f5abba7d58ab090895",
+      "selected_epoch": 33,
+      "optics": {
+        "mode": "lens",
+        "size": 128,
+        "wavelength": 5.32e-07,
+        "pitch": 1e-05,
+        "distances": [
+          0.0241,
+          0.0253,
+          0.0265,
+          0.0277
+        ],
+        "powers": [
+          80.0,
+          55.0,
+          30.0,
+          10.0
+        ]
+      },
+      "hidden_width": 512
+    },
+    "no_lens": {
+      "file": "pinn_no_lens.pt",
+      "sha256": "cb49a04568b28c4e7a2c608d90ac288b73a28b800302461024b99c50268162a4",
+      "selected_epoch": 45,
+      "optics": {
+        "mode": "no_lens",
+        "size": 128,
+        "wavelength": 5.32e-07,
+        "pitch": 1e-05,
+        "distances": [
+          0.0241,
+          0.0253,
+          0.0265,
+          0.0277
+        ],
+        "powers": [
+          80.0,
+          55.0,
+          30.0,
+          10.0
+        ]
+      },
+      "hidden_width": 512
+    }
+  },
+  "default_refine_steps": 100
+}

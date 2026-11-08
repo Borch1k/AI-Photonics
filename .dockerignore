@@ -1,0 +1,10 @@
+**
+!Dockerfile
+!requirements.txt
+!pipeline.py
+!photonics.py
+!optics.py
+!models/
+!models/pinn_lens.pt
+!models/pinn_no_lens.pt
+!models/manifest.json
